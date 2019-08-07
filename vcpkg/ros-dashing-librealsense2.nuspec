@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ros-dashing-librealsense2</id>
+    <version>2.16.5</version>
+    <title>ros-dashing-librealsense2</title>
+    <authors>Sergey Dorodnicov <sergey.dorodnicov@intel.com></authors>
+    <owners>OSRF</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Library for capturing data from the Intel(R) RealSense(TM) SR300 and D400 cameras.
+ This effort was initiated to better support researchers, creative coders, and app developers in domains such as robotics, virtual reality, and the internet of things. Several often-requested features of RealSense(TM); devices are implemented in this project, including multi-camera capture.</description>
+<dependencies>
+      <dependency id="ros-dashing-ros-workspace"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
